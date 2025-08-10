@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Love Message</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff8dc;
+    color: #b8860b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  #message {
+    font-size: 2rem;
+    max-width: 600px;
+  }
+</style>
+</head>
+<body>
+  <div id="message">Loading...</div>
+
+  <script src="messages.js"></script>
+  <script>
+    function getMessageIndex() {
+      // Get URL param like ?id=5
+      const params = new URLSearchParams(window.location.search);
+      let id = parseInt(params.get('id'));
+      if (!id || id < 1 || id > messages.length) {
+        id = 1; // default message
+      }
+      return id - 1;
+    }
+
+    const messageEl = document.getElementById('message');
+    const idx = getMessageIndex();
+    messageEl.textContent = messages[idx];
+  </script>
+</body>
+</html>
