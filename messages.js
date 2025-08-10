@@ -47,5 +47,6 @@ const messages = [
     "I love every single bit of you, even your pinky toenail",
     "I can't wait to travel the world with you",
     "Every time I think of my future you are the first thing I think of",
-    "Never stop being you Maraki mou, you're perfect! <3 "
+    "Never stop being you Maraki mou, you're perfect! <3 ",
+    "I can't wait for all the laughs we're gonna have in the future :))"
 ]
