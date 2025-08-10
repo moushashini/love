@@ -26,21 +26,26 @@
 <body>
   <div id="message">Loading...</div>
 
-  <script src="messages.js"></script>
-  <script>
-    function getMessageIndex() {
-      // Get URL param like ?id=5
-      const params = new URLSearchParams(window.location.search);
-      let id = parseInt(params.get('id'));
-      if (!id || id < 1 || id > messages.length) {
-        id = 1; // default message
-      }
-      return id - 1;
+<script src="messages.js"></script>
+<script>
+  function getMessageIndex() {
+    const params = new URLSearchParams(window.location.search);
+    let id = parseInt(params.get('id'), 10);
+    if (!id || id < 1 || id > messages.length) {
+      id = 1;
     }
+    return id - 1;
+  }
 
-    const messageEl = document.getElementById('message');
-    const idx = getMessageIndex();
+  const messageEl = document.getElementById('message');
+  const idx = getMessageIndex();
+
+  if (!messages[idx]) {
+    messageEl.textContent = "Oops, message not found!";
+  } else {
     messageEl.textContent = messages[idx];
-  </script>
+  }
+</script>
+
 </body>
 </html>
