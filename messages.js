@@ -1,5 +1,20 @@
 const messages = [
-    "I love your bright smile",
+    "You have the brightest smile in the world",
+    "Your eyes make me miss barbecue sauce",
+    "Your feet stink",
+    "I miss smushing your cheeks",
+    "When I look at an elephant I think of your ears",
+    "I miss messing your hair up",
+    "Thank you for always being caring:)",
+    "You are the most beautiful girl in the world",
+    "You are the most talented crotcheer in the world",
+    "You have the cutest laugh",
+    "I am the luckiest man in the world because I have you!",
+    "Ahlalela ahlalas",
+    "One Free Pass To Tickle me: Screenshot",
+    "One Free Pass for a 10 Minute Massage: Screenshot",
+    "I love your butt",
+    "I love how down-to-earth you are",
+    "I love how attractive you are",
     "I love how you are always there for me"
-
 ]
